@@ -1,0 +1,4 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "mavenPackageAuto.maven.executable.options":"package"
+}
