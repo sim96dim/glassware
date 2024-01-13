@@ -1,8 +1,7 @@
 package com.generation.controllers;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,18 +9,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/esempio2")
-public class Esempio2 extends HttpServlet
+@WebServlet("/")
+public class ServletBase extends HttpServlet
 {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
     {
-        List<String> boh = new ArrayList<>();
-        boh.add("Ciao");
-        boh.add("bye");
-        boh.add("hello");
-        boh.add("hola");
-        req.setAttribute("lista", boh);
-        req.getRequestDispatcher("/esempio4.ftl").forward(req, resp);
+        PrintWriter writer = resp.getWriter();
+        writer.println("linea1");
+        writer.println("linea2");
+        writer.println("linea3");
+        writer.close();
     }
 }

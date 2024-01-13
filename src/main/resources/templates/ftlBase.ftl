@@ -3,8 +3,6 @@
     <head>
     </head>
     <body>
-    <#list lista as saluto>
-        <h2>${saluto}</h2>
-    </#list>
+        <h1>${attributo}</h1>
     </body>
 </html>
