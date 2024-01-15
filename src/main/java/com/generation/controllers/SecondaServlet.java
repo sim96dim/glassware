@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/seconda")
 public class SecondaServlet extends HttpServlet
 {
+    //http://localhost:8080/base/seconda?a=8&b=16
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
@@ -31,9 +32,9 @@ public class SecondaServlet extends HttpServlet
         int primoParametro = Integer.parseInt(req.getParameter("a"));
         int secondoParametro = Integer.parseInt(req.getParameter("b"));
         int risultatoSomma = primoParametro+secondoParametro;
-        stampatore.println(indirizzoCorto);//lo stampo nella pagina web della response
-        stampatore.println("ho il parametro \"a\" che vale "+primoParametro);
-        stampatore.println("ho il parametro \"b\" che vale "+secondoParametro);
+        // stampatore.println(indirizzoCorto);//lo stampo nella pagina web della response
+        // stampatore.println("ho il parametro \"a\" che vale "+primoParametro);
+        // stampatore.println("ho il parametro \"b\" che vale "+secondoParametro);
         stampatore.println("la loro somma è "+risultatoSomma);
         stampatore.close();
     }
