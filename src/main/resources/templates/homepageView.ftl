@@ -11,6 +11,8 @@
     <body>
         <h1> Benvenuto nel miglior negozio di CRISTALLERIA della città </h1>
 
+        <a href="glasscolorsearchform">Cerca bicchieri per colore</a>
+
         <h2>Affrettati, questi stanno per terminare </h2>
 
         <div> 
