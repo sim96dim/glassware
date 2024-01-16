@@ -6,7 +6,8 @@ import java.util.List;
 import com.generation.model.entities.Glass;
 
 
-public class GlassRepositoryMock  {
+public class GlassRepositoryMock implements GlasswareRepository<Glass>
+{
 
     private static  List<Glass> glassList = new ArrayList<Glass>();
 

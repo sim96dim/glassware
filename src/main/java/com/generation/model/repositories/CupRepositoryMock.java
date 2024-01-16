@@ -6,7 +6,8 @@ import java.util.List;
 import com.generation.model.entities.Cup;
 
 
-public class CupRepositoryMock  {
+public class CupRepositoryMock implements GlasswareRepository<Cup>
+{
 
     private static  List<Cup> cupList = new ArrayList<Cup>();
 
